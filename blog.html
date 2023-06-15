@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Блог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header-border">
+					<a href="index.html" class="header__logo"><img src="img/logoIMG.svg" alt="logo"><img class="header__logo-txt" src="img/logoTXT.svg" alt="logo"></a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<div data-spollers class="header__spollers spollers-header">
+										<details class="spollers-header__item">
+											<summary class="spollers-header__title">Фестивалі</summary>
+											<div class="spollers-header__body">
+												<ul class="spollers-header__list">
+													<li class="list__item"><a href="smartblog.html">Smart Blog</a></li>
+													<li class="list__item"><a href="bookfashion.html">Book fashion</a></li>
+													<li class="list__item"><a href="kyiv.html">Київ – Всесвітня Книжкова Столиця</a></li>
+												</ul>
+											</div>
+										</details>
+									</div>
+								</li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Блог</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search search-header">
+							<div class="search-header__icon">
+								<img src="img/serchIcon.svg" alt="search">
+							</div>
+							<div class="search-header__requests">
+								<div class="search-header__block">
+									<img src="img/iconSearch.svg" alt="Search">
+									<input type="text" placeholder="Я шукаю..." id="search-header__list">
+								</div>
+								<div class="search-header__popular">
+									<div class="search-header__title">Популярні запити:</div>
+									<ul class="search-header__popularlist">
+										<li><a href="bookfashion.html" class="search-header__request">Фестиваль “Book Fashion”</a></li>
+										<li><a href="TrailerForABook.html" class="search-header__request">Трейлер до книги у жанрі фантастики</a></li>
+										<li><a href="kyiv.html" class="search-header__request">Студентський проєкт “Київ – Всесвітня Книжкова Столиця”</a></li>
+									</ul>
+								</div>
+								<ul class="search-header__list">
+									<a href="bookfashion.html" class="search-header__request">
+										<li class="hide">Фестиваль “Book Fashion”</li>
+									</a>
+									<a href="TrailerForABook.html" class="search-header__request">
+										<li class="hide">Трейлер до книги у жанрі фантастики</li>
+									</a>
+									<a href="kyiv.html" class="search-header__request">
+										<li class="hide">Студентський проєкт “Київ – Всесвітня Книжкова Столиця”</li>
+									</a>
+									<a href="smartblog.html" class="search-header__request">
+										<li class="hide">Фестиваль «Smart Blog»</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__tabs">
+				<div class="tabs__container">
+					<div class="blog__title title tabs-blog">
+						<h2>Блог</h2>
+					</div>
+					<div data-tabs data-tabs-animate="500" class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title is-active _tab-active" active-color="#DB5475">Усі статті</button>
+							<button type="button" class="tabs__title" active-color="#DB5475">#smartblog</button>
+							<button type="button" class="tabs__title" active-color="#DB5475">#bookfashion</button>
+							<button type="button" class="tabs__title" active-color="#DB5475">#_kyiv_bookcity</button>
+							<span class="nav-indicator"></span>
+						</nav>
+						<div class="tabs__spoller">
+							<div data-spollers class="spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">Сортувати</summary>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="list__item"><button class="list-btn" id="new">Найновіші</button></li>
+											<li class="list__item"><button class="list-btn" id="old">Найстаріші</button></li>
+										</ul>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="blog__items">
+									<article data-date="1681084800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Час розповісти про призи від спонсорів!</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">10.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680825600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Коронація слова</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">07.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680307200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Хто ж і за які заслуги отримає Спецвідзнаку?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680048000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="TrailerForABook.html"><img src="img/tabs/bookfashion/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="TrailerForABook.html">
+													<h2>Трейлер до книги у жанрі фантастики</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680048000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Нон-фікшн книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679961600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Трейлер до патріотичної книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679875200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Трейлер до дитячої книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">27.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679616000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Шкільна програма.
+														Іван Багряний “Тигролови”</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679529600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/09.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Художня література.
+														Сергій Жадан</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619827200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/10.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Чому важливо ретельно обирати книжку?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.05.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619740800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/11.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Мумі-тролі — те, чого ви не знали</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">30.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619654400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/12.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Автор творів «Дари волхвів» та «Останній листок»</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619568000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/13.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>«Злочин і кара» Ф. М. Достоєвський</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619395200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/14.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Фантастика, яка стала реальністю</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">26.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619308800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/15.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про одну з тих сфер, що впливає на майбутнє — економіку</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619222400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/16.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>5 причин читати
+														нон-фікшн</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1618358400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/17.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>З Днем
+														Йоганна Гутенберга!</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">14.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1670716800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книга для перемоги. Не кожен може бути героєм.</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">11.12.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1669334400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>То чому ж саме Київ - книжкова столиця світу?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книга для перемоги «Київські маскарони»</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Дітям про війну</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжковий супротив</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжкові виставки та ярмарки Києва</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книги про війну, написані українцями-учасниками бойових дій </h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжкова зброя киян</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1635811200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Продовження терміну подачі заяв</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">02.11.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1575331200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Продовжимо знайомство з нашим Університетом</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">03.12.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1575158400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Найнезвичніші делікатеси зі всього світу</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.12.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574985600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про детективи</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574899200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Список країн, з яких найкраще розпочинати туризм</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574812800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Альтернативна заміна пластику</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">27.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574726400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Саме час трохи більше дізнатися трохи про наш ЗВО</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">26.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574640000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Що таке inclusivebooks та з чим його їдять?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574553600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/09.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Ділимося Food-лайфхаки</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574380800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/10.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Важливі лайфхаки для використання в подорожі</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">22.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574294400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/11.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про повітрні кульки та їхню роль в екології</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">21.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1557964800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/12.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Як взяти все необхідне та не нести 1000 валіз?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">16.05.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1557964800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/13.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Check-list речей,що необхідно взяти у відпустку</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">16.05.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542931200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/14.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>BUY NOTHING DAY — аналог чорної п'ятниці</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542931200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/15.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Час трохи поговорити про екологію</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542672000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/16.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Топ 15 книг для розвитку особистості за версією Yakaboo.ua</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">20.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542585600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/17.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Найкращі рецепти масок для догляду
+														за обличчям</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">19.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542585600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/18.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Декілька ну дуууже корисних та дієвих масок</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">19.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="blog__items">
+									<article data-date="1635811200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Продовження терміну подачі заяв</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">02.11.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1575331200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Продовжимо знайомство з нашим Університетом</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">03.12.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1575158400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Найнезвичніші делікатеси зі всього світу</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.12.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574985600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про детективи</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574899200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Список країн, з яких найкраще розпочинати туризм</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574812800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Альтернативна заміна пластику</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">27.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574726400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Саме час трохи більше дізнатися трохи про наш ЗВО</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">26.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574640000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Що таке inclusivebooks та з чим його їдять?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574553600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/09.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Ділимося Food-лайфхаки</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574380800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/10.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Важливі лайфхаки для використання в подорожі</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">22.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1574294400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/11.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про повітрні кульки та їхню роль в екології</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">21.11.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1557964800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/12.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Як взяти все необхідне та не нести 1000 валіз?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">16.05.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1557964800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/13.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Check-list речей,що необхідно взяти у відпустку</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">16.05.2019</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542931200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/14.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>BUY NOTHING DAY — аналог чорної п'ятниці</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542931200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/15.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Час трохи поговорити про екологію</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542672000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/16.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Топ 15 книг для розвитку особистості за версією Yakaboo.ua</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">20.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542585600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/17.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Найкращі рецепти масок для догляду
+														за обличчям</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">19.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1542585600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/smartblog/18.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Декілька ну дуууже корисних та дієвих масок</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">19.11.2018</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#smartblog</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="blog__items">
+									<article data-date="1681084800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Час розповісти про призи від спонсорів!</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">10.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680825600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Коронація слова</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">07.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680307200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Хто ж і за які заслуги отримає Спецвідзнаку?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.04.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680048000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="TrailerForABook.html"><img src="img/tabs/bookfashion/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="TrailerForABook.html">
+													<h2>Трейлер до книги у жанрі фантастики</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1680048000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Нон-фікшн книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679961600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Трейлер до патріотичної книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679875200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Трейлер до дитячої книги</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">27.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679616000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Шкільна програма.
+														Іван Багряний “Тигролови”</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1679529600000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/09.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Художня література.
+														Сергій Жадан</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">23.03.2023</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619827200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/10.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Чому важливо ретельно обирати книжку?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">01.05.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619740800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/11.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Мумі-тролі — те, чого ви не знали</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">30.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619654400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/12.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Автор творів «Дари волхвів» та «Останній листок»</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">29.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619568000000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/13.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>«Злочин і кара» Ф. М. Достоєвський</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">28.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619395200000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/14.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Фантастика, яка стала реальністю</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">26.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619308800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/15.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Поговоримо про одну з тих сфер, що впливає на майбутнє — економіку</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1619222400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/16.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>5 причин читати
+														нон-фікшн</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">24.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1618358400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/bookfashion/17.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>З Днем
+														Йоганна Гутенберга!</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">14.04.2021</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#bookfashion</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="blog__items">
+									<article data-date="1670716800000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/01.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книга для перемоги. Не кожен може бути героєм.</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">11.12.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1669334400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/02.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>То чому ж саме Київ - книжкова столиця світу?</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">25.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/03.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книга для перемоги «Київські маскарони»</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/04.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Дітям про війну</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/05.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжковий супротив</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/06.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжкові виставки та ярмарки Києва</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/07.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книги про війну, написані українцями-учасниками бойових дій </h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+									<article data-date="1668470400000" class="blog__item item-blog">
+										<div class="item-blog__image">
+											<a href="#"><img src="img/tabs/_kyiv_bookcity/08.jpg" alt="Blog"></a>
+										</div>
+										<div class="item-blog__content">
+											<div class="item-blog__title">
+												<a href="">
+													<h2>Книжкова зброя киян</h2>
+													<div class="item-blog__link"></div>
+												</a>
+											</div>
+											<div class="item-blog__data">
+												<div class="item-blog__date">15.11.2022</div>
+												<div class="item-blog__hashtags hashtags">
+													<div class="hashtags__item">#_kyiv_bookcity</div>
+												</div>
+												<div class="item-blog__time">2 хв</div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__contacts">
+					<a href="index.html" class="footer__logo"><img src="img/Logo.svg" alt="logo"></a>
+					<div class="footer__social">
+						<a href="https://www.instagram.com/vydavtsi_kubg/?igshid=YmMyMTA2M2Y%3D">
+							<div class="social__item-1"></div>
+						</a>
+						<a href="https://www.facebook.com/groups/250607155340254">
+							<div class="social__item-2"></div>
+						</a>
+						<a href="#">
+							<div class="social__item-3"></div>
+							kmvs.fj@kubg.edu.ua
+						</a>
+					</div>
+				</div>
+				<div class="footer__actions">
+					<button type="button" class="footer__button"></button>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230615155130"></script>
+</body>
+
+</html>
